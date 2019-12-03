@@ -65,6 +65,7 @@ ul, li {
 .button_full:hover {
     border: 2px dotted white;
     background: #04564e;
+    cursor: pointer;
 }
 /*О нас*/
 .about {
@@ -88,4 +89,48 @@ ul, li {
     margin-bottom: 20px;
     font-family: 'Open Sasn Semibold';
     font-style: 20px;
+}
+/*Наши услуги*/
+.services {
+    padding-top: 165px;
+    padding-bottom: 125px;
+    color: black;
+    background: #e4fdf9;
+    text-align: center;
+}
+.our_card {
+    background: white;
+    padding: 50px 40px 40px; 
+    transition: 0.3s;  /*плавность*/
+    margin-bottom: 30px;
+/*    box-shadow: 0px 10px 12px -3px rgba(0, 0, 0, 0.26);*/
+}
+.our_card:hover {
+    background: #00897b;
+    color: white;
+    box-shadow: 0px 10px 12px -3px rgba(0, 0, 0, 0.26);
+}
+.our_card:hover .icon {
+    color: white;
+}
+.our_card:hover .button-services {
+    border: 2px solid white;
+    color: white;
+}
+.icon {
+    transition: 0.3s;  /*плавность*/
+    font-size: 60px;
+    color: black;    
+}
+.button-services {
+    transition: 0.3s;  /*плавность*/
+    color: black;
+    text-transform: uppercase;
+    border: 2px solid black;
+    background: transparent;
+    padding: 10px 12px 10px;
+    font-family: 'Open Sasn Semibold';
+}
+.button-services:hover {
+    cursor: pointer;
 }
