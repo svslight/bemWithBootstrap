@@ -22,13 +22,19 @@ $(document).ready(function () {
       dots: true,
       dotsClass: 'dots-style',
       responsive: [{
-         breakpoint: 1024,
+         breakpoint: 1025,
          settings: {
             slidesToShow: 2,
             slidesToScroll: 2,
          }
+      }, {
+         breakpoint: 480,
+         settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+         }
       }]
-    });
+   });
 
     /*Меню - переход по ссылкам*/ 
    $('ul.menu a[href^="#"').click(function(){
